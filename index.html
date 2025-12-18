@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Engineering Cultures</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google fallback font (for punctuation coverage only) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* ===============================
+         Ethereal Demo Font Declarations
+         =============================== */
+
+      @font-face {
+        font-family: "Ethereal";
+        src: url("/fonts/EtherealDemo-Thin.otf") format("opentype");
+        font-weight: 100;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Ethereal";
+        src: url("/fonts/EtherealDemo-ExtraLight.otf") format("opentype");
+        font-weight: 200;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Ethereal";
+        src: url("/fonts/EtherealDemo-Light.otf") format("opentype");
+        font-weight: 300;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Ethereal";
+        src: url("/fonts/EtherealDemo-Regular.otf") format("opentype");
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Ethereal";
+        src: url("/fonts/EtherealDemo-Medium.otf") format("opentype");
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Ethereal";
+        src: url("/fonts/EtherealDemo-SemiBold.otf") format("opentype");
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Ethereal";
+        src: url("/fonts/EtherealDemo-Bold.otf") format("opentype");
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Ethereal";
+        src: url("/fonts/EtherealDemo-ExtraBold.otf") format("opentype");
+        font-weight: 800;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Ethereal";
+        src: url("/fonts/EtherealDemo-Black.otf") format("opentype");
+        font-weight: 900;
+        font-style: normal;
+      }
+
+      /* ===============================
+         Global Styles (ONLY font fallback added)
+         =============================== */
+
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #18181b;
+        color: #e4e4e7;
+        font-family: "Ethereal", "Playfair Display", Georgia, serif;
+      }
+    </style>
+
+    <!-- Tailwind Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: [
+                '"Ethereal"',
+                '"Playfair Display"',
+                'Georgia',
+                'serif',
+              ],
+              sans: [
+                '"Ethereal"',
+                '"Playfair Display"',
+                'Georgia',
+                'serif',
+              ],
+              handwriting: [
+                '"Ethereal"',
+                '"Playfair Display"',
+                'Georgia',
+                'serif',
+              ],
+            },
+            colors: {
+              background: {
+                primary: "#18181b",
+                secondary: "#27272a",
+              },
+              text: {
+                main: "#e4e4e7",
+                muted: "#a1a1aa",
+              },
+              accent: {
+                copper: "#b06d48",
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- React Import Map -->
+    <script type="importmap">
+      {
+        "imports": {
+          "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+          "react/": "https://esm.sh/react@^19.2.3/",
+          "react": "https://esm.sh/react@^19.2.3"
+        }
+      }
+    </script>
+
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
